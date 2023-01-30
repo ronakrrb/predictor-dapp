@@ -1,0 +1,27 @@
+@import "../../../helpers/mixins";
+@import "../../../helpers/variables";
+
+.card {
+    border: 1px solid gray;
+    border-radius: $border-radius;
+    padding: $padding;
+    @include borderbox();
+
+    width: 300px;
+    height: 120px;
+
+    .teams {
+        display: flex;
+        justify-content: space-between;
+    }
+    .predictorBar {
+        display: flex;
+        justify-content: space-between;
+        margin: 8px 0px;
+    }
+    .predictAction {
+        display: flex;
+        justify-content: space-between;
+        margin: 8px 0px;
+    }
+}

@@ -17232,12 +17232,12 @@
     "1673553825098": {
       "events": {},
       "links": {},
-      "address": "0x8F6C3Af01990819c04e7fD6A3af013Ad95cE6B29",
-      "transactionHash": "0x74fcd11d5b05fa5c6625d3fdbd1f439f4a55a7499aeac6392bbfd8bef659b51e"
+      "address": "0x42FeD71109A64D19653aB9d5A6C89991806f3712",
+      "transactionHash": "0x4a0de9bad5cee5c046d2528b90f02def9675c0952846a679adb5fe250fe8ec4a"
     }
   },
   "schemaVersion": "3.4.11",
-  "updatedAt": "2023-01-12T20:08:17.506Z",
+  "updatedAt": "2023-01-26T20:29:25.497Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

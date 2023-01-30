@@ -1,0 +1,39 @@
+{
+    "name": "createMatch",
+    "reference": "https://react-jsonschema-form.readthedocs.io/en/latest/",
+    "type": "object",
+    "required": [
+        "match_id",
+        "sport_id",
+        "teamA_name",
+        "teamA_id",
+        "teamB_name",
+        "teamB_id"
+    ],
+    "properties": {
+        "match_id": {
+            "type": "number",
+            "title": "Match ID"
+        },
+        "sport_id": {
+            "type": "number",
+            "title": "Sports ID"
+        },
+        "teamA_name": {
+            "type": "string",
+            "title": "Team A Name"
+        },
+        "teamA_id": {
+            "type": "number",
+            "title": "Team A ID"
+        },
+        "teamB_name": {
+            "type": "string",
+            "title": "Team B Name"
+        },
+        "teamB_id": {
+            "type": "number",
+            "title": "Team B ID"
+        }
+    }
+}
