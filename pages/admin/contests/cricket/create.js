@@ -1,13 +1,13 @@
 import React from "react";
 import validator from "@rjsf/validator-ajv8";
 import Form from "@rjsf/core";
-import Home from "../../index";
-const matchSchema = require("../assets/forms/createMatch.json"); //produced by Truffle compile
+import Home from "../../../index";
+const matchSchema = require("../../assets/forms/createMatch.json"); //produced by Truffle compile
 
 
 export default function CreateMatch() {
     const createMatch = (form = {}) => {
-        fetch('/api/createMatch', {
+        fetch('/api/contests/cricket/create', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

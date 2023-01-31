@@ -11,7 +11,7 @@ export default function Home({children}) {
             </Head>
 
             <header>
-                <Link href="/matches">Matches</Link>
+                <Link href="/contests/cricket">Cricket</Link>
             </header>
 
             <main>

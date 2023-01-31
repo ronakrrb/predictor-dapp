@@ -1,25 +1,27 @@
 import React, {useEffect, useState} from "react";
-import Home from "../index";
-import Web3Connect from '../../public/Web3Connect';
-import CricketCard from '../components/cards/cricket';
+import Home from "../../index";
+import Web3Connect from '../../../public/Web3Connect';
+import CricketCard from '../../components/cards/cricket';
 
 export default function Matches() {
     const [matches, setMatches] = useState(new Array(0));
 
+    const getMatches = () => {
+        fetch('/api/contests/cricket')
+            .then(response => response.json())
+            .then(data => {
+                setMatches(data.matches);
+                console.log(data);
+            })
+            .catch(err => {
+                console.log(err);
+            });
+    }
     useEffect(() => {
         let wallet = Web3Connect();
         wallet.init();
         console.log(wallet);
-
-        fetch('/api/getAllMatches')
-            .then(response => response.json())
-            .then(data => {
-                setMatches(data.matches);
-                console.log(data.matches);
-            })
-            .catch(err => {
-                console.log(err);
-            })
+        getMatches();
     }, []);
 
     return (

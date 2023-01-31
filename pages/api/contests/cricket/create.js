@@ -1,4 +1,4 @@
-const contractArtifact = require("../contracts/Predictor.json"); //produced by Truffle compile
+const contractArtifact = require("../../../contracts/Predictor.json"); //produced by Truffle compile
 const Contract = require('web3-eth-contract');
 
 export default async function handler(req, res) {
