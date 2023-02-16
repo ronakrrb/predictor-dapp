@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useEffect} from "react";
 import validator from "@rjsf/validator-ajv8";
 import Form from "@rjsf/core";
+import Web3Connect from '../../../helpers/Web3Connect';
 import Home from "../../../index";
 const matchSchema = require("../../assets/forms/createMatch.json"); //produced by Truffle compile
 
@@ -23,6 +24,11 @@ export default function CreateMatch() {
                 console.log(err);
             });
     }
+    useEffect(() => {
+        let wallet = Web3Connect();
+        wallet.init();
+        console.log(wallet);
+    }, []);
     return (
         <Home>
             <div className="form">

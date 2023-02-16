@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import Home from "../../index";
-import Web3Connect from '../../../public/Web3Connect';
+import Web3Connect from '../../helpers/Web3Connect';
 import CricketCard from '../../components/cards/cricket';
 
 export default function Matches() {
@@ -26,7 +26,7 @@ export default function Matches() {
 
     return (
         <Home>
-            {matches.map((d, i) => (
+            {matches && matches.map((d, i) => (
                 <CricketCard data={d} key={`cricket-card${i}`} />
             ))}
         </Home>
