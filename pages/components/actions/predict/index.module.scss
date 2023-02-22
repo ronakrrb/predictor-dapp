@@ -1,5 +1,18 @@
 .predictAction {
-    display: flex;
-    justify-content: space-between;
-    margin: 8px 0px;
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0px;
+
+  input {
+    width: 40px;
+    /* Chrome, Safari, Edge, Opera */
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    -moz-appearance: textfield;
+  }
 }
